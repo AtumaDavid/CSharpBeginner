@@ -70,6 +70,40 @@ namespace MyFirstProject
                 }
             }
 
+            // Exercise - Print string in reverse
+            // five
+            /*
+             * Ask use to input message
+             * print in order
+             * print in reverse
+             */
+            Console.Write("Enter your message: ");
+            string message = Console.ReadLine();
+
+            //Console.WriteLine(message[0]);
+            //Console.WriteLine(message.Length);
+
+            for (int i = 0; i < message.Length; i++) // 0-13
+            {
+                Console.Write(message[i]);
+            }
+
+            for (int i = message.Length - 1; i >= 0; i--) // 13-0
+            {
+                Console.Write(message[i]);
+            }
+
+            // Exrcise - Password checker
+            // six
+            /*
+             * Ask user to enter password and store
+             * Ask user to enter password again, and store
+             * Check if they are both contain something
+             * -- If so, check if they are the same
+             * --   -- If they are, Print "Password match"
+             * --   -- If they are not, Print "Password do not match"
+             * -- If they are empty, print "please enter a password"
+             */
 
             Console.ReadLine();
         }

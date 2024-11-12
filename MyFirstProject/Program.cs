@@ -134,6 +134,40 @@ namespace MyFirstProject
                 Console.WriteLine("Please enter a password.");
             }
 
+            // Exrcise - Odd/Even Number Split
+            // seven
+            /*
+             * Create two lists with integer data types, one for even numbers and one for odd numbers
+             * Loop from 0 to 20
+             *  -- If number is even, add to even list
+             *  -- If number is odd, add to odd list
+             * Print even list
+             * Print odd list
+             */
+            List<int> odd = new List<int>();
+            List<int>  even = new List<int>();
+
+            for (int i = 0; i <= 20; i++) {
+                if (i % 2 == 0) {
+                    even.Add(i);
+                }
+                else
+                {
+                    odd.Add(i);
+                }
+            }
+            Console.WriteLine("Printing even numbers: ");
+            foreach(var item in even)
+            {
+                Console.WriteLine($"{item}"); 
+            }
+
+            Console.WriteLine("Printing odd numbers: ");
+            foreach (var item in odd)
+            {
+                Console.WriteLine($"{item}");
+            }
+
             Console.ReadLine();
         }
     }
